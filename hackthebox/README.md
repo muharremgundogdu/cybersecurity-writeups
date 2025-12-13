@@ -1,3 +1,5 @@
 # Hack The Box Write-ups
 
-This folder contains hands-on write-ups from Hack The Box labs.
+This section contains detailed write-ups of Hack The Box labs,
+focusing on enumeration, vulnerability analysis, exploitation,
+and mitigation strategies.
