@@ -21,6 +21,11 @@ These files appeared to be accessible without authentication, indicating a poten
 information disclosure issue.
 
 ## Vulnerability Analysis
+The web application exposed multiple PCAP files that contained captured network traffic.
+One of these captures included sensitive information transmitted in cleartext.
+
+The root cause of the vulnerability was the lack of proper access control and encryption,
+allowing attackers to analyze network traffic and extract credentials.
 
 ## Exploitation
 
