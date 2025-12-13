@@ -12,6 +12,13 @@ from captured network traffic.
 - Goal: Gain user and root access
 
 ## Enumeration
+An initial port scan was performed to identify exposed services on the target system.
+The scan revealed a web service running on port 80, which became the primary focus
+for further enumeration.
+
+Upon visiting the web application, multiple network capture (PCAP) files were discovered.
+These files appeared to be accessible without authentication, indicating a potential
+information disclosure issue.
 
 ## Vulnerability Analysis
 
