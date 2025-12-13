@@ -28,7 +28,20 @@ The root cause of the vulnerability was the lack of proper access control and en
 allowing attackers to analyze network traffic and extract credentials.
 
 ## Exploitation
+The identified PCAP files were downloaded and analyzed using Wireshark.
+By inspecting the captured traffic, credentials transmitted in cleartext
+were identified.
+
+These credentials were then used to authenticate to the target system via SSH,
+resulting in successful user-level access.
 
 ## Impact
+An attacker could gain unauthorized access to the system by extracting
+credentials from exposed network traffic. This could lead to data breaches,
+lateral movement within the network, and full system compromise.
 
 ## Mitigation
+- Restrict access to network capture files through proper authentication
+- Enforce encrypted communication protocols such as HTTPS and SSH
+- Avoid transmitting credentials in cleartext
+- Apply the principle of least privilege
