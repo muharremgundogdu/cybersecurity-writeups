@@ -17,6 +17,7 @@ Difficulty: Starting Point / Very Easy
 Goal: Gain system-level access and retrieve the final flag
 
 Enumeration
+
 Initial enumeration identified a Windows-based target exposing the WinRM service
 on port 5985. WinRM is commonly used for remote management and becomes a
 critical attack surface when combined with leaked or weak credentials.
@@ -26,6 +27,7 @@ that the host participated in name resolution and authentication processes that
 could potentially expose credentials under certain conditions.
 
 Vulnerability Analysis
+
 The core issue was related to insecure name resolution and authentication behavior.
 In such scenarios, systems may attempt to authenticate to resources discovered
 via broadcast or multicast name queries.
@@ -42,6 +44,7 @@ Lack of protections against spoofed responses
 Exposure of authentication attempts over the network
 
 Exploitation (High-level)
+
 Within the authorized HTB lab environment, leaked authentication material was
 identified and validated. These credentials were then used to authenticate to
 the target system via the exposed WinRM service on port 5985.
@@ -53,6 +56,7 @@ Note: Specific operational commands are intentionally omitted to prevent
 misuse outside legal lab environments.
 
 Impact
+
 An attacker with access to leaked credentials could authenticate to the system
 using remote management services such as WinRM, resulting in full system compromise.
 
@@ -61,6 +65,7 @@ movement, privilege escalation, and widespread account compromise if credentials
 are reused across systems.
 
 Mitigation
+
 Disable or restrict unsafe name resolution protocols where not required
 Harden authentication mechanisms and enforce secure configurations
 Prevent transmission of authentication material over insecure channels
