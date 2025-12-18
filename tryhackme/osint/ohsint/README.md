@@ -2,8 +2,8 @@
 
 ## 1️⃣ Overview
 This write-up documents my analysis of the **OHSINT** room on TryHackMe.  
-The objective was to identify relevant information using **open-source intelligence techniques** by analyzing publicly available data.  
-The lab focuses on structured thinking and correlating small clues across multiple sources rather than active exploitation.
+The objective was to identify required information by applying **OSINT techniques** on publicly available data.  
+The focus of this lab is not exploitation, but understanding how different open sources can be analyzed and correlated in a structured way.
 
 ---
 
@@ -11,46 +11,67 @@ The lab focuses on structured thinking and correlating small clues across multip
 - **Target:** Simulated OSINT scenario  
 - **Environment:** Public online sources  
 - **Difficulty:** Easy  
-- **Goal:** Extract required information through OSINT methodology  
+- **Goal:** Extract requested information using OSINT methodology  
 
 ---
 
 ## 3️⃣ Enumeration
-The investigation started with analyzing the provided image, as images often contain useful metadata and contextual hints.  
-Information discovered during this phase revealed identifiers that could be reused across different platforms.  
-These identifiers became the primary focus because they allowed pivoting into other open-source platforms and building an intelligence chain.
+The investigation started with the **provided image**, as images may contain hidden metadata and contextual clues.  
+Metadata analysis revealed identifiers that could potentially be reused across different platforms.
+
+These identifiers were important because username or identifier reuse often allows pivoting into:
+- Social media platforms
+- Developer platforms
+- Personal blogs or public pages
+
+Each finding was treated as a pivot point and verified using multiple open sources before proceeding further.
 
 ---
 
-## 4️⃣ Vulnerability Analysis
-The core issue identified was **information disclosure through publicly shared data**.  
-This occurs when multiple platforms expose small but correlatable pieces of information, which together reveal more than intended.
+## 4️⃣ Tools & Techniques
+The following tools and techniques were used during the investigation:
+
+- Metadata analysis tools (for image inspection)
+- Open-source search engines
+- Username and profile correlation techniques
+- Public wireless / SSID-based OSINT databases
+- Client-side source code inspection for hidden information
 
 ---
 
-## 5️⃣ Exploitation (High-Level)
-The disclosed information enabled correlation between multiple open sources.  
-Findings from one platform were used to guide further searches on others, leading to the required conclusions without any direct interaction or active exploitation.
+## 5️⃣ Vulnerability Analysis
+The main issue identified was **information disclosure through publicly available data**.  
+This type of issue occurs when individuals unintentionally expose small pieces of information across multiple platforms, which can later be correlated.
+
+Rather than a technical vulnerability, this represents a **digital footprint misconfiguration**.
 
 ---
 
-## 6️⃣ Impact
-In real-world scenarios, this type of information disclosure could allow an attacker to:
-- Profile individuals
-- Support social engineering attacks
-- Infer physical locations
-- Prepare targeted attacks
+## 6️⃣ Exploitation (High-Level)
+The exposed information allowed correlation between different open platforms.  
+Information gathered from one source was used to guide further searches on others, gradually building a complete picture.
+
+No active exploitation or direct interaction with systems was required.
 
 ---
 
-## 7️⃣ Mitigation
-- Minimize public exposure of metadata  
-- Avoid username reuse across platforms  
+## 7️⃣ Impact
+In real-world scenarios, this level of information disclosure could:
+- Enable profiling of individuals
+- Support phishing or social engineering attacks
+- Reveal location-related context
+- Assist attackers during reconnaissance phases
+
+---
+
+## 8️⃣ Mitigation
+- Avoid sharing unnecessary metadata publicly  
+- Do not reuse usernames across multiple platforms  
 - Regularly review public profiles and shared content  
-- Raise OSINT awareness for individuals and organizations  
+- Increase OSINT awareness for individuals and organizations  
 
 ---
 
 ### 🧠 Summary
-OSINT relies on connecting small public clues.  
-This room demonstrates how seemingly harmless information can be combined to create meaningful intelligence.
+This room demonstrates how OSINT relies on connecting small public clues.  
+When combined, seemingly harmless information can result in meaningful intelligence.
