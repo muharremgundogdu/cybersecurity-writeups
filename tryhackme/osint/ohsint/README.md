@@ -1,25 +1,56 @@
-# TryHackMe – OHSINT (OSINT Room)
+# TryHackMe – OHSINT
 
-## 🎯 Objective
-This write-up documents my learning process while solving the OHSINT room on TryHackMe.
-The focus is on **OSINT methodology and investigation flow**, not on sharing direct answers.
+## 1️⃣ Overview
+This write-up documents my analysis of the **OHSINT** room on TryHackMe.  
+The objective was to identify relevant information using **open-source intelligence techniques** by analyzing publicly available data.  
+The lab focuses on structured thinking and correlating small clues across multiple sources rather than active exploitation.
 
-## 🧠 Investigation Flow
-- Initial analysis started with the provided image
-- Metadata was examined to extract potential technical and contextual clues
-- Extracted identifiers were used to pivot into open-source platforms
-- Multiple public sources were correlated to validate findings
-- Each step built upon the previous clue in a structured OSINT chain
+---
 
-## 🛠 Tools & Techniques
-- Metadata analysis tools
-- Open-source search engines
-- Social media and username correlation
-- Wireless / SSID-related OSINT services
-- Source code inspection for hidden clues
+## 2️⃣ Scope
+- **Target:** Simulated OSINT scenario  
+- **Environment:** Public online sources  
+- **Difficulty:** Easy  
+- **Goal:** Extract required information through OSINT methodology  
 
-## 📌 Key Takeaways
-- Small metadata details can lead to significant intelligence
-- OSINT investigations require patience and systematic thinking
-- Publicly shared information across platforms can be correlated easily
-- Verification across multiple sources is c
+---
+
+## 3️⃣ Enumeration
+The investigation started with analyzing the provided image, as images often contain useful metadata and contextual hints.  
+Information discovered during this phase revealed identifiers that could be reused across different platforms.  
+These identifiers became the primary focus because they allowed pivoting into other open-source platforms and building an intelligence chain.
+
+---
+
+## 4️⃣ Vulnerability Analysis
+The core issue identified was **information disclosure through publicly shared data**.  
+This occurs when multiple platforms expose small but correlatable pieces of information, which together reveal more than intended.
+
+---
+
+## 5️⃣ Exploitation (High-Level)
+The disclosed information enabled correlation between multiple open sources.  
+Findings from one platform were used to guide further searches on others, leading to the required conclusions without any direct interaction or active exploitation.
+
+---
+
+## 6️⃣ Impact
+In real-world scenarios, this type of information disclosure could allow an attacker to:
+- Profile individuals
+- Support social engineering attacks
+- Infer physical locations
+- Prepare targeted attacks
+
+---
+
+## 7️⃣ Mitigation
+- Minimize public exposure of metadata  
+- Avoid username reuse across platforms  
+- Regularly review public profiles and shared content  
+- Raise OSINT awareness for individuals and organizations  
+
+---
+
+### 🧠 Summary
+OSINT relies on connecting small public clues.  
+This room demonstrates how seemingly harmless information can be combined to create meaningful intelligence.
