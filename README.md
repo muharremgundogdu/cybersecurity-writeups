@@ -11,6 +11,6 @@ write-ups based on platforms such as Hack The Box and TryHackMe.
 
 ## Platforms
 - Hack The Box
-- TryHackMe
+- TryHackMe 
  
  
