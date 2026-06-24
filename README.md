@@ -1,4 +1,4 @@
-# Cybersecurity Write-ups 
+# Cybersecurity Write-ups  
   
 This repository contains hands-on cybersecurity labs and professional-style
 write-ups based on platforms such as Hack The Box and TryHackMe.
