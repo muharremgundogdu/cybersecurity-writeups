@@ -3,7 +3,7 @@
 This repository contains hands-on cybersecurity labs and professional-style
 write-ups based on platforms such as Hack The Box and TryHackMe.
 
-## Focus Areas
+## Focus Areas 
 - Network traffic analysis 
 - Web application vulnerabilities
 - Credential exposure
