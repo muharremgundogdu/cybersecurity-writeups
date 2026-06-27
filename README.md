@@ -9,7 +9,7 @@ write-ups based on platforms such as Hack The Box and TryHackMe.
 - Credential exposure
 - Basic incident response and reporting 
  
-## Platforms
+## Platforms 
 - Hack The Box
 - TryHackMe 
   
