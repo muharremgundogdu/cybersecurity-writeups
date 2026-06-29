@@ -8,7 +8,7 @@ write-ups based on platforms such as Hack The Box and TryHackMe.
 - Web application vulnerabilities
 - Credential exposure
 - Basic incident response and reporting 
- 
+  
 ## Platforms 
 - Hack The Box 
 - TryHackMe 
